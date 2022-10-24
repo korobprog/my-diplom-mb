@@ -99,6 +99,10 @@
       -moz-appearance: none;
       appearance: none;
     }
+
+    .popup__select-field:focus {
+      border: 1px solid #b59f5b;
+    }
     
     .popup__emailsub {
       margin-bottom: 35px;
@@ -164,6 +168,11 @@
       font-weight: 400;
       color: #000000;
       background-color: #f4f7f6;
+      resize: none;
+    }
+
+    .popup__textarea-field:focus {
+      border: 1px solid #b59f5b;
     }
     
     .header {
@@ -469,6 +478,7 @@
       font-weight: 700;
       text-transform: uppercase;
       color: #b59f5b;
+      margin: 0 3px;
     }
     
     .title_button:hover {
@@ -554,6 +564,13 @@
         background-color: white;
         margin-right: 20px;
     }
+    .article_posts_image::before {
+      content: "";
+      display: inline-block;
+      width: 70px;
+      margin-right: 20px;
+  }
+
     
     .article_posts_time {
         display: block;
